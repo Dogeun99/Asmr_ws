@@ -1,0 +1,7 @@
+.cache/
+.config/
+.local/
+Downloads/
+Pictures/Screenshots/
+*.log
+*.ldb

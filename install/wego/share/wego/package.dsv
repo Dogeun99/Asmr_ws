@@ -1,0 +1,8 @@
+source;share/wego/hook/cmake_prefix_path.ps1
+source;share/wego/hook/cmake_prefix_path.dsv
+source;share/wego/hook/cmake_prefix_path.sh
+source;share/wego/local_setup.bash
+source;share/wego/local_setup.dsv
+source;share/wego/local_setup.ps1
+source;share/wego/local_setup.sh
+source;share/wego/local_setup.zsh

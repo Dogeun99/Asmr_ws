@@ -1,0 +1,9 @@
+/home/hjkim/gnu_ws/build/wego/CMakeFiles/uninstall.dir
+/home/hjkim/gnu_ws/build/wego/CMakeFiles/wego_uninstall.dir
+/home/hjkim/gnu_ws/build/wego/CMakeFiles/test.dir
+/home/hjkim/gnu_ws/build/wego/CMakeFiles/edit_cache.dir
+/home/hjkim/gnu_ws/build/wego/CMakeFiles/rebuild_cache.dir
+/home/hjkim/gnu_ws/build/wego/CMakeFiles/list_install_components.dir
+/home/hjkim/gnu_ws/build/wego/CMakeFiles/install.dir
+/home/hjkim/gnu_ws/build/wego/CMakeFiles/install/local.dir
+/home/hjkim/gnu_ws/build/wego/CMakeFiles/install/strip.dir

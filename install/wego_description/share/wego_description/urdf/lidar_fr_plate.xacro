@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="lidar_fr_plate">
+
+    <xacro:macro name="lidar_fr_plate" params="lidar_fr_plate_prefix *joint_pose">
+        <link name="${lidar_fr_plate_prefix}_link">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://wego_description/meshes/lidar_fr_plate_v3.stl" scale="0.001 0.001 0.001"/>
+                </geometry>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://wego_description/meshes/lidar_fr_plate_v3.stl" scale="0.001 0.001 0.001"/>
+                </geometry>
+            </collision>
+        </link>
+
+        <joint name="${lidar_fr_plate_prefix}_joint" type="fixed">
+            <parent link="base_link"/>
+            <child link="${lidar_fr_plate_prefix}_link"/>
+            <xacro:insert_block name="joint_pose"/>
+            <axis xyz="0 0 0" rpy="0 0 0" />
+        </joint>
+    </xacro:macro>
+    
+</robot>

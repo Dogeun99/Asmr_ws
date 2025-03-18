@@ -1,0 +1,4 @@
+source;share/wego/local_setup.bash
+source;share/wego/local_setup.dsv
+source;share/wego/local_setup.sh
+source;share/wego/local_setup.zsh

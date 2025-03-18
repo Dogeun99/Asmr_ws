@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="sensor_kit">
+
+    <xacro:macro name="sensor_kit" params="sensor_kit_prefix *joint_pose">
+        <link name="${sensor_kit_prefix}_link">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://wego_description/meshes/sensor_kit_v3.stl" scale="0.001 0.001 0.001"/>
+                </geometry>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://wego_description/meshes/sensor_kit_v3.stl" scale="0.001 0.001 0.001"/>
+                </geometry>
+            </collision>
+        </link>
+
+        <joint name="${sensor_kit_prefix}_joint" type="fixed">
+            <parent link="base_link"/>
+            <child link="${sensor_kit_prefix}_link"/>
+            <xacro:insert_block name="joint_pose"/>
+            <axis xyz="0 0 0" rpy="0 0 0" />
+        </joint>
+    </xacro:macro>
+    
+</robot>
